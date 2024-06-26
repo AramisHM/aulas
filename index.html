@@ -3,20 +3,21 @@
     <head>
         <meta charset="utf-8"/>
         <link href="style/style.css" rel="stylesheet" />
-        <title>Detalhes ACFT</title>
+        <title>Cadastro Livros</title>
     </head>
     <body>
-        <h1>ACFT Cherokee</h1>
-        <img src="./images/aviao.jpg" alt="Uma imagem: uma imagem fotografica.">
-        <p>Dados da aeronave:</p>
-        <ul>
-            <li>Nome: Cherokee </li>
-            <li>Ano: 1977</li>
-            <li>Motor: 180HP </li>
-        </ul>
-        <p>O Piper Cherokee 180 é um avião monomotor de asa baixa e configuração triciclo (com um trem de pouso principal atrás e um trem de pouso dianteiro), fabricado pela Piper Aircraft. Ele é valorizado por sua combinação de desempenho, conforto e facilidade de operação.</p>
-        <p>Leia o artigo da <a href="https://en.wikipedia.org/wiki/Piper_PA-28_Cherokee">Wikipedia</a> sobre o Cherokee 180 para saber mais sobre essa ACFT.</p>
-        <!-- fim  -->
+        <h1>Biblioteca</h1>
+        <h2>Adicionar Autor</h2>
+        <input type="text" id="autorNome" placeholder="Nome do autor">
+        <button onclick="addAutor()">Adicionar</button>
+
+        <h2>Adicionar Livro</h2>
+        <input type="text" id="livroTitulo" placeholder="Titulo do livro">
+        <input type="number" id="autorId" placeholder="ID do autor">
+        <button onclick="addLivro()">Adicionar</button>
+
+        <h2>Lista de Livros</h2>
+        <div id="livroList"></div>
     </body>
     <script src="scripts/main.js"></script>
 </html>
